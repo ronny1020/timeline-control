@@ -1,0 +1,11 @@
+{
+  "name": "timeline-control",
+  "version": "0.1.0",
+  "description": "A tool for controlling whatever you want to do on anywhere on time line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ronny1020",
+  "license": "MIT"
+}
