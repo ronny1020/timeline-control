@@ -13,4 +13,4 @@ async function runTimeline() {
   }
 }
 
-runTimeline()
+module.exports = runTimeline
