@@ -1,4 +1,4 @@
-function countTime(action, timeInterval) {
+function countTime(action = () => {}, timeInterval) {
   return new Promise(function (resolve) {
     action()
     setTimeout(resolve, timeInterval)
@@ -8,8 +8,10 @@ function countTime(action, timeInterval) {
 async function runTimeline(timeEvent) {
   for (let i = 0; i < timeEvent.length; i++) {
     const repeat = timeEvent[i].repeat > 1 ? timeEvent[i].repeat : 1
+    const timeInterval =
+      timeEvent[i].timeInterval > 0 ? timeEvent[i].timeInterval : 1
     for (let j = 0; j < repeat; j++) {
-      await countTime(timeEvent[i].action, timeEvent[i].timeInterval)
+      await countTime(timeEvent[i].action, timeInterval)
     }
   }
 }
