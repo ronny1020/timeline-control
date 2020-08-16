@@ -5,7 +5,7 @@ function countTime(action = () => {}, timeInterval) {
   })
 }
 
-async function runTimeline(timeEvent) {
+async function setTimeline(timeEvent) {
   for (let i = 0; i < timeEvent.length; i++) {
     const repeat = timeEvent[i].repeat > 1 ? timeEvent[i].repeat : 1
     const timeInterval =
@@ -16,4 +16,4 @@ async function runTimeline(timeEvent) {
   }
 }
 
-module.exports = runTimeline
+module.exports = setTimeline

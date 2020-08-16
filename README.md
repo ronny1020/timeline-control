@@ -30,7 +30,7 @@ const t = [
   { timeInterval: 1000, action: () => console.log('end') },
 ]
 
-runTimeline(t)
+setTimeline(t)
 ```
 
 ## Properties

@@ -7,5 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ronny1020",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronny1020/timeline-control.git"
+  },
+  "keywords": [
+    "timeInterval",
+    "time",
+    "timeOut"
+  ],
+  "bugs": {
+    "url": "https://github.com/ronny1020/timeline-control/issues"
+  },
+  "homepage": "https://github.com/ronny1020/timeline-control#readme"
 }
